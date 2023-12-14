@@ -1,0 +1,146 @@
+body {
+    background-color: #623530;
+	font-family: 'Pixelify Sans', sans-serif;
+}
+
+.scene {
+	display: flex;
+  	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	
+}
+
+#bgimg {
+	position: absolute;
+  	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	z-index: 1;
+}
+
+#crop {
+	position: relative;
+	top: 20rem;
+
+}
+
+.control {
+    position: relative;
+	top: 40rem;
+    display: flex;
+    align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+	background-color: rgba(15, 83, 156, 0.5);
+	border: 10px solid whitesmoke;
+	border-radius: 25px;
+	padding: 12px;
+	margin: 18px;
+	width: 75%;
+	
+}
+
+h1 {
+    position: absolute;
+	display: flex;
+	text-align: center;
+	font-size: 50px;
+	width: 100%;
+    color: #fff;
+	text-shadow: 5px 5px 1px black;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: default;
+}
+
+h2 {
+    position: absolute;
+	font-size: 45px;
+	top: -10px;
+	padding: 5px;
+    color: #fff;
+	text-shadow: 5px 5px 1px black;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: default;
+}
+
+h3 {
+    position: absolute;
+	bottom: 50px;
+	padding: 5px;
+	font-size: 25px;
+    color: #fff;
+	text-shadow: 5px 5px 1px black;
+    font-weight: 600;
+    transition: 0.5s;
+    cursor: default;
+}
+
+.btn {
+    position: relative;
+    margin-top: 5em;
+    box-shadow:inset 0px 1px 0px 0px #f9eca0;
+	background:linear-gradient(to bottom, #f0c911 5%, #f2ab1e 100%);
+	background-color:#f0c911;
+	border-radius:6px;
+	border:1px solid #e65f44;
+	display:inline-block;
+	cursor:pointer;
+	color:#c92200;
+	font-family: 'Pixelify Sans', sans-serif;
+	font-size:30px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ded17c;
+    
+}
+
+.btn:hover {
+	background:linear-gradient(to bottom, #f2ab1e 5%, #f0c911 100%);
+	background-color:#f2ab1e;
+}
+.btn:active {
+	top:1px;
+}
+
+@media (min-width: 375px) {
+	.control {
+		position: relative;
+		top: 47rem;
+		display: flex;
+		align-items: center;
+		justify-content: start;
+	}
+
+	h1 {
+		font-size: 55px;
+	}
+}
+
+@media (min-width: 768px) {
+	.control {
+		position: relative;
+		top: 47rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	h1 {
+		font-size: 60px;
+	}
+}
